@@ -1,0 +1,9 @@
+version: '3'
+services:
+  teampomo:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./config:/app/config
+    restart: unless-stopped
